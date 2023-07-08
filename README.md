@@ -66,10 +66,9 @@ em que $\beta$ é um fator positivo, escolhido de forma que o Recall seja $\beta
 
 Considere as seguintes quantidades:
 
-\begin{align*}
-&\text{True Positive Rate (TPR)} = \frac{\text{Number of true positive predictions}}{\text{Number of total positive cases}} = \frac{TP}{TP + FN}\\\\
-&\text{False Positive Rate (FPR)} = \frac{\text{Number of false positive predictions}}{\text{Number of total negative cases}} = \frac{FP}{FP + TN}
-\end{align*}
+- True Positive Rate (TPR) é calculada como: $TPR = \frac{TP}{TP + FN}$
+- False Positive Rate (FPR) é calculada como: $FPR = \frac{FP}{FP + TN}$
+
 
 A curva ROC (Receiver Operating Characteristic, Característica de Operação do Receptor) é obtida plotando-se a TPR em relação à FPR para vários valores de probabilidade de limite. A área sob a curva ROC (ROC-AUC) serve como uma métrica de avaliação válida.
 
