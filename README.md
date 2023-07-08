@@ -43,24 +43,22 @@ $$\text{Accuracy} = \frac{\text{Number of correct predictions}}{\text{Number of 
 
 - **Métrica de recuperação de precisão**
 
-\begin{align*}
-&\text{Precisão} = \frac{\text{Número de previsões positivas verdadeiras}}{\text{Número de previsões positivas totais}} = \frac{TP}{TP + FP}\\\\
-&\text{Recall} = \frac{\text{Número de previsões positivas verdadeiras}}{\text{Número total de casos positivos}} = \frac{TP}{TP + FN}\\\\
-&\text{Fowlkes-Mallows index (FM)} = \text{Geometric mean of Precision and Recall} = \sqrt{\text{Precision} \times \text{Recall}}\\\\
-&F_1\text{-Score} = \text{Média harmônica de precisão e recuperação} = \frac{2 \times \text{Precision} \times \text{Recall}}{\text{Precision} + \text{Recall}}\\\\
-&F_{\beta}\text{-Score} = \frac{\left(1 + \beta^2\right) \times \text{Precision} \times \text{Recall}}{\left(\beta^2 \times \text{Precision}\right) + \text{Recall}},
-\end{align*}
+- Precisão é calculada como: $Precisão = \frac{TP}{TP + FP}$
+- Recall é calculado como: $Recall = \frac{TP}{TP + FN}$
+- Fowlkes-Mallows index (FM) é a média geométrica de Precisão e Recall: $FM = \sqrt{Precisão \times Recall}$
+- F1-Score é a média harmônica de Precisão e Recall: $F1-Score = \frac{2 \times Precisão \times Recall}{Precisão + Recall}$
+- F-beta Score é calculado como: $F_{\beta}-Score = \frac{(1 + \beta^2) \times Precisão \times Recall}{(\beta^2 \times Precisão) + Recall}$
+
 
 em que $\beta$ é um fator positivo, escolhido de forma que o Recall seja $\beta$ vezes mais importante que a Precisão na análise. As escolhas populares de $\beta$ são $0,5$, $1$ e $2$.
 
 
 - Métricas de sensibilidade-especificidade**
 
-\begin{align*}
-&\text{Sensibilidade} = \frac{\text{Número de previsões positivas verdadeiras}}{\text{Número total de casos positivos}} = \frac{TP}{TP + FN}\\\\
-&\text{Especificidade} = \frac{\text{Número de previsões negativas verdadeiras}}{\text{Número total de casos negativos}} = \frac{TN}{TN + FP}\\\\
-&\text{G-mean} = \text{Média geométrica de sensibilidade e especificidade} = \sqrt{\text{Sensibilidade} \times \text{Specificity}}
-\end{align*}
+- Sensibilidade é calculada como: $Sensibilidade = \frac{TP}{TP + FN}$
+- Especificidade é calculada como: $Especificidade = \frac{TN}{TN + FP}$
+- G-mean é a média geométrica de Sensibilidade e Especificidade: $G-mean = \sqrt{Sensibilidade \times Especificidade}$
+
 
 - **Métricas de área sob a curva (AUC)**
 
