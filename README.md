@@ -77,8 +77,7 @@ Da mesma forma, a curva Precision-Recall (PR) é obtida plotando-se a Precision 
 
 - **Outras métricas**
 
-\begin{align*}
-&\text{Matthews Correlation Coefficient (MCC)} = \frac{\left(TP \times TN\right) - \left(FP \times FN\right)}{\sqrt{\left(TP + FP\right) \times \left(TP + FN\right) \times \left(TN + FP\right) \times \left(TN + FN\right)}}
+\begin{align*}&\text{Matthews Correlation Coefficient (MCC)} = \frac{\left(TP \times TN\right) - \left(FP \times FN\right)}{\sqrt{\left(TP + FP\right) \times \left(TP + FN\right) \times \left(TN + FP\right) \times \left(TN + FN\right)}}
 \end{align*}
 
 Diferentemente das métricas anteriores, **MCC** varia de $-1$ (pior cenário) a $1$ (melhor cenário: previsão perfeita).
